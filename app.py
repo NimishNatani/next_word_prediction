@@ -5,7 +5,7 @@ from tensorflow.keras.models import load_model
 import streamlit as st
 from tensorflow.keras.preprocessing.sequence import pad_sequences
 
-model = load_model('next_word_lstm.h5')
+model = load_model('next_word_keras.keras')
 
 with open('tokenizer.pickle','rb') as handle:
     tokenizer = pickle.load(handle)
